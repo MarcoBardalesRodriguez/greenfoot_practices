@@ -8,20 +8,23 @@ public class Rana extends Actor
         
         if (Greenfoot.isKeyDown("Right"))
         {
-            move(1);
-            //comer();
+            move(5);
+            comer();
         }
         if (Greenfoot.isKeyDown("Left"))
         {
             move(-5);
+            comer();
         }
         if (Greenfoot.isKeyDown("Up"))
         {
             y-=5;
+            comer();
         }
         if (Greenfoot.isKeyDown("Down"))
         {
-            y+=5; 
+            y+=5;
+            comer();
         }
         setLocation(getX(),y);
         
@@ -33,9 +36,9 @@ public class Rana extends Actor
         
         World mundo;
         mundo = getWorld();
-        if (Mosca!=null){
-            Mosca.
-        }
         
+        if (Mosca!=null){
+            mundo.removeObject(Mosca);
+        }   
     }
 }
