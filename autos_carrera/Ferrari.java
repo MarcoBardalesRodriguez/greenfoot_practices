@@ -2,6 +2,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Ferrari extends Actor
 {
+    public void nuevo(){
+        int act;
+        int World;
+        int Actor;
+        int Ferrari;
+    }
     public void act()
     {
         int random = Greenfoot.getRandomNumber(4);
@@ -37,5 +43,6 @@ public class Ferrari extends Actor
         }
         
         setLocation(x,y);
+        
     }
 }
